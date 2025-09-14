@@ -8,12 +8,12 @@ const TEAM = [
     role: "Owner / Project Lead",
     photo: "/team/nik.png",
     blurb:
-      "11+ years in structural carpentry & concrete. Focused on ADA details, Architectual walls, schedule certainty, and clean finishes.",
+      "11+ years in structural carpentry & concrete. Focused on ADA details, architectural walls, schedule certainty, and clean finishes.",
   },
 
   {
     name: "My Team",
-    role: "Carpenter/Finisher",
+    role: "Carpenters/Finishers",
     photo: "/team/richardmarlon.png",
     blurb:
       "I only employ the best of the best. Most of us have been working side by side for nearly a decade, and that chemistry shows in every pour. Our attention to detail, communication on site, and pride in craftsmanship are what set us apart — we don’t settle for “good enough,” and neither should you.",
