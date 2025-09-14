@@ -22,12 +22,12 @@ export const PROJECTS = [
   },
   {
     slug: "BoardForm",
-    title: "Boardform Architectual Wall",
+    title: "Boardform architectural Wall",
     location: "Campus access, Washington",
     cover: "/projects/board-form-wall/cover.jpeg",
     caption: "Built 200 lf retaining wall with board form finish. Firberglass coil rod ties to hold wall thickness and hide tie from finish. Built using MDO and douglas fir board form sandblasted. ",
     details:
-      "Board form architectual wall with 9.6 radius seatwall at upper landing and 2.8 radius seatwall at lower landing. Walkway to follow.",
+      "Board form architectural wall with 9.6 radius seatwall at upper landing and 2.8 radius seatwall at lower landing. Walkway to follow.",
     photos: [
       "/projects/board-form-wall/1.jpeg",
       "/projects/board-form-wall/2.jpeg",

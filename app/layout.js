@@ -77,6 +77,8 @@ function Footer() {
             <li><Link href="/services" className="hover:text-white">Services</Link></li>
             <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
             <li><Link href="/estimate" className="hover:text-white">Free estimate</Link></li>
+            <Link href="/team" className="hover:text-[#2b66b1] transition-colors">Team</Link>
+
           </ul>
         </div>
       </div>
