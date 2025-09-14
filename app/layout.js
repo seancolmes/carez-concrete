@@ -8,7 +8,7 @@ export const metadata = {
   title: "Carez Concrete — ADA Ramps, Walkways, Slabs, Retaining Walls | Washington",
   description:
     "Carez Concrete builds ADA-compliant ramps & walkways, curb & gutter, flatwork, slabs, retaining walls, and structural concrete. Licensed, bonded, insured. Serving Washington State.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/favicon.png" },
   openGraph: {
     title: "Carez Concrete — Concrete that passes inspection the first time.",
     description:
