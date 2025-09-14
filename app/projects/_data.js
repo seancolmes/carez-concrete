@@ -64,7 +64,7 @@ export const PROJECTS = [
       "/projects/board-form-wall/33.jpeg",
       "/projects/board-form-wall/34.jpeg",
       "/projects/board-form-wall/35.jpeg",
-      "/projects/board-form-wall/36.jpeg",
+      "/projects/board-form-wall/36.jpg",
       "/projects/board-form-wall/37.jpg",
     ],
   },
