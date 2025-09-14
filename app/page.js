@@ -63,7 +63,9 @@ export default function CarezConcreteLanding() {
             style={{ backgroundImage: "url(https://images.unsplash.com/photo-1516910817561-7f29b3f00b61?q=80&w=1920&auto=format&fit=crop)" }}
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/70 to-transparent" />
+          {/* Let the global body background show through */}
+          <div className="absolute inset-0 -z-10" aria-hidden="true" />
+
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
