@@ -96,16 +96,20 @@ function Footer() {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${head.variable} ${body.variable}`}>
       <body
-        className="text-zinc-900 bg-[url('/Background.png')] bg-cover bg-fixed bg-center"
+        className="font-[var(--font-body)] text-neutral-100"
+        style={{
+          backgroundImage: "url('/background.png')", // put Background.png into /public/background.png
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
       >
-        {/* Optional overlay for readability */}
-        <div className="min-h-screen bg-black/50">
-          {children}
-        </div>
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
-
