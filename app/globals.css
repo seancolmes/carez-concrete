@@ -31,3 +31,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* --- Concrete texture helpers --- */
+.texture-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url("/background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: .25; /* overall subtlety */
+  /* soft fade top+bottom so it blends into sections */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 18%, black 82%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0, black 18%, black 82%, transparent 100%);
+  pointer-events: none; /* never block clicks */
+}
+
+.texture-divider {
+  height: 96px;               /* divider band height */
+  background-image: url("/background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: .28;
+  /* fade left+right so it feels airy */
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 15%, black 85%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0, black 15%, black 85%, transparent 100%);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+}
