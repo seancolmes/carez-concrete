@@ -8,7 +8,9 @@ export const metadata = {
   title: "Carez Concrete — ADA Ramps, Walkways, Slabs, Retaining Walls | Washington",
   description:
     "Carez Concrete builds ADA-compliant ramps & walkways, curb & gutter, flatwork, slabs, retaining walls, and structural concrete. Licensed, bonded, insured. Serving Washington State.",
-  icons: { icon: "/favicon.png" },
+  icons: {
+    icon: "/logo.png", // favicon/logo for browser + Google
+  },
   openGraph: {
     title: "Carez Concrete — Concrete poured right the first time.",
     description:
@@ -40,7 +42,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur supports-[backdrop-filter]:bg-neutral-900/70 bg-neutral-900/90 border-b border-neutral-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Logo (no black box, scaled for visibility) */}
+        {/* Logo */}
         <div className="flex items-end gap-3 pb-1">
           <div className="relative h-16 w-40">
             <Image src="/logo.png" alt="Carez Concrete logo" fill className="object-contain" priority />
@@ -128,11 +130,14 @@ export default function RootLayout({ children }) {
     priceRange: "$$",
     areaServed: "Washington",
     address: { "@type": "PostalAddress", addressRegion: "WA", addressCountry: "US" },
-    sameAs: [
-      // Add real profiles as you create them, e.g.:
-      // "https://www.facebook.com/yourpage",
-      // "https://www.instagram.com/yourpage"
-    ],
+    sameAs: [],
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    url: "https://carezconcrete.com",
+    logo: "https://carezconcrete.com/logo.png",
   };
 
   return (
@@ -146,10 +151,15 @@ export default function RootLayout({ children }) {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* LocalBusiness JSON-LD for Google */}
+        {/* LocalBusiness JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
+        {/* Organization JSON-LD (for Google logo) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <Header />
         <main className="min-h-screen">{children}</main>
