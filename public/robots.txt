@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://carezconcrete.com/sitemap.xml
